@@ -1,0 +1,345 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* scrollbar settings */
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    @apply bg-orange-faded rounded-xl;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-orange-secondary;
+}
+
+
+/* text */
+
+p {
+    @apply text-base font-normal;
+}
+
+h2 {
+    @apply text-3xl font-extrabold;
+}
+
+
+/* table */
+
+table {
+    @apply border-2 border-none rounded-md border-orange-faded;
+    box-shadow: 0 0 0 1px #3d29730d;
+    position: relative;
+    border-collapse: collapse;
+    /* this draws the table border   */
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+th,
+td {
+    @apply p-6 text-lg font-semibold text-left;
+}
+
+th {
+    @apply font-bold opacity-50;
+}
+
+tr {
+    @apply w-full border-b-2 cursor-pointer border-orange-faded;
+}
+
+thead>tr {
+    @apply cursor-default;
+}
+
+
+/* button */
+
+.button {
+    @apply flex w-fit items-center justify-center gap-2 px-4 py-2 text-lg font-semibold text-white rounded-lg bg-orange-secondary;
+}
+
+.button:disabled {
+    @apply bg-gray;
+}
+
+.button svg {
+    @apply h-4 w-4;
+}
+
+.buttond {
+    @apply flex w-fit items-center justify-center gap-2 px-4 py-2 text-lg font-semibold text-white rounded-lg bg-orange;
+}
+
+.buttond:disabled {
+    @apply bg-gray;
+}
+
+.buttond svg {
+    @apply h-4 w-4;
+}
+
+.icon-button {
+    @apply text-black bg-transparent stroke-2;
+}
+
+.icon-button>svg {
+    @apply text-black bg-transparent stroke-black h-7 w-7;
+}
+
+
+/* inputs */
+
+label {
+    @apply font-semibold text-sm;
+}
+
+.input {
+    @apply w-80 px-4 py-3 border-2 rounded-lg outline-none border-gray text-base font-semibold;
+}
+
+.input:focus {
+    @apply border-orange-secondary;
+}
+
+
+/* keywords */
+
+.keyword-list {
+    @apply flex flex-wrap items-center gap-3;
+}
+
+.keyword-list>span {
+    @apply flex flex-row items-center justify-items-center p-4 gap-2 rounded-lg bg-black text-white font-semibold text-sm;
+}
+
+
+/* modal */
+
+.ReactModal__Overlay,
+.ReactModal__Overlay--after-open {
+    @apply flex justify-center items-center bg-gray-background !important;
+}
+
+.modal {
+    /* background: none; */
+    @apply w-[465px] px-16 py-10 bg-white rounded-md;
+}
+
+.modal form {
+    @apply flex flex-col gap-5;
+}
+
+.modal .line {
+    @apply h-[1px] bg-black my-7 opacity-10 rounded-md;
+}
+
+.modal>form>button {
+    @apply mt-5 w-full bg-orange-secondary;
+}
+
+.row-center {
+    @apply flex flex-row items-center justify-center gap-3;
+}
+
+.delete-button {
+    @apply bg-red;
+}
+
+.modal-event {
+    @apply w-fit px-16 py-10 bg-white rounded-md;
+}
+
+.modal-ad {
+    @apply w-fit px-16 py-10 bg-white rounded-md;
+}
+
+
+/* modalReg */
+
+.register-row {
+    @apply flex flex-row content-evenly;
+}
+
+.modalRegAll {
+    @apply flex flex-col w-[600px] h-screen px-16 py-10 bg-white rounded-md;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    right: 1px;
+    outline: none;
+}
+
+.modalReg {
+    @apply flex flex-col gap-2;
+    align-items: center;
+    right: 1px;
+    outline: none;
+}
+
+.buttons {
+    @apply flex flex-row gap-4
+}
+
+.modalReg>img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.modalRegAD {
+    margin-left:30%;
+    margin-top: 20%;
+}
+
+.modalRegAD>p {
+    text-align :center;
+}
+
+.modalReg form {
+    @apply flex flex-col gap-2;
+}
+
+.modalReg>form>button {
+    @apply w-full bg-black;
+}
+
+.modalReg>form>p {
+    @apply w-full text-center;
+}
+
+.register-backgroundLoggo{
+    @apply h-screen;
+    position: relative;
+}
+
+/* text for the checkbox */
+.checkbox-reg{
+    @apply flex flex-col items-center justify-center gap-3;
+}
+
+/* toggle button */
+input:checked ~ .radio {
+    @apply text-white bg-orange-secondary;
+}
+/* special info section */
+
+.no-keywords {
+    @apply font-bold text-lg flex flex-col gap-5 w-auto m-[1px] text-black;
+}
+
+.line-event {
+    @apply bg-orange;
+}
+
+.section-container {
+    @apply font-semibold text-lg flex flex-col gap-5 w-auto m-[1px];
+}
+
+.section-title {
+    @apply font-semibold text-lg;
+}
+
+.section-container .fields {
+    @apply rounded-md p-6;
+    background-color: #7b61ff;
+    box-shadow: 0px 6px 10px rgb(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    column-gap: 40px;
+    row-gap: 20px;
+    grid-template-columns: max-content max-content;
+    width:500px;
+}
+
+.rows {
+    @apply flex flex-row text-white;
+    justify-content: space-between
+}
+
+.field-key {
+    @apply text-white;
+}
+
+.reading-card {
+    @apply flex flex-col gap-3 p-6 border-t-[5px] w-max rounded-md m-[1px];
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.statistic-card {
+    @apply flex flex-col gap-3 p-10 border-t-[5px] border-orange-accent w-max rounded-md m-[1px];
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.spinner {
+    @apply bg-white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* navigation */
+
+.nav-link {
+    @apply h-12 w-64 pl-4 rounded-[6px] flex border-solid border-2 items-center font-bold gap-2 text-lg;
+}
+
+.active {
+    @apply w-64 text-white bg-black opacity-100;
+}
+
+/* header */
+
+.profile-container {
+    @apply flex flex-row justify-end w-auto gap-2;
+}
+
+.profile-info {
+    @apply flex flex-col font-semibold;
+}
+
+.profile-info>a {
+    @apply underline min-w-[150px] text-end text-black;
+}
+
+.signout {
+    @apply decoration-transparent w-auto text-black text-right;
+    cursor: pointer;
+}
+
+.profile-link {
+    @apply font-bold text-lg w-20;
+}

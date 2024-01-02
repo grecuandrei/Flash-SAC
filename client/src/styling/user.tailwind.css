@@ -1,0 +1,86 @@
+/* layout */
+
+.user-layout {
+  @apply flex w-screen h-screen flex-col;
+}
+
+.user-content {
+  @apply flex flex-row overflow-y-auto gap-7 p-4;
+}
+
+.user-content-main {
+  @apply flex flex-col w-screen overflow-y-auto gap-7;
+}
+
+.menu {
+  @apply w-full flex flex-row pr-10 pl-10 pt-4 pb-2 justify-between items-center gap-12;
+  background-color: #7b61ff
+}
+
+.nav {
+  @apply flex flex-row w-[90%] gap-5;
+}
+
+/* ads layout */
+.ads {
+  @apply flex flex-wrap gap-4 m-[1px];
+}
+
+.events {
+  @apply flex flex-wrap px-4 gap-2 m-[1px];
+}
+
+/* ad card */
+.event-card {
+  @apply pb-6 px-4 rounded-3xl flex flex-col gap-3 md:items-center min-w-[300px];
+  box-shadow: 0px 0px 10px #7b61ff;
+}
+
+.event-card-details {
+  @apply pt-6 rounded-3xl flex flex-col gap-3 md:items-center min-w-[300px];
+}
+
+.event-group {
+  @apply flex flex-col md:items-center;
+}
+
+.event-time {
+  @apply flex flex-row gap-3;
+}
+
+.ad-card {
+  @apply pb-6 px-4 rounded-3xl flex flex-col justify-between gap-3 min-w-[300px];
+  box-shadow: 0px 0px 2px #7b61ff;
+}
+
+.ad-card-details {
+  @apply pt-6 rounded-3xl flex flex-col gap-3 min-w-[300px];
+}
+
+.rented {
+  box-shadow: 0px 0px 2px #999999;
+}
+
+.ad-group {
+  @apply flex flex-col gap-1;
+}
+
+.card-heading {
+  @apply flex items-center;
+}
+
+.card-heading > p:first-of-type {
+  @apply font-semibold text-base;
+}
+
+.card-heading > p {
+  @apply font-semibold text-sm;
+}
+
+.title {
+  @apply text-[28px] font-semibold;
+}
+
+.keywords {
+  @apply font-semibold text-sm opacity-50;
+}

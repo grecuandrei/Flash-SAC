@@ -1,0 +1,1 @@
+python3 event_recomandation_5.py event_id

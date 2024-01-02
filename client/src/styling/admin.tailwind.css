@@ -1,0 +1,25 @@
+/* customs */
+
+.row-between {
+    @apply flex items-center justify-between;
+}
+
+.analytic-section {
+    @apply w-[250px] mt-12;
+}
+
+.graph {
+    @apply mt-12 h-[250px];
+}
+
+.card-statistic {
+    @apply flex flex-col gap-2;
+}
+
+.card-statistic>p:first-child {
+    @apply text-[2.5rem];
+}
+
+.card-statistic>p:nth-child(2) {
+    @apply font-semibold opacity-50;
+}
